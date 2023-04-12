@@ -1,0 +1,106 @@
+---
+title: "My awesome title"
+author:
+- Olalla Díaz-Yáñez,
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document2:
+    keep_tex: yes
+    number_sections: yes
+    toc: no
+    extra_dependencies: "subfig"
+  word_document:
+    reference_docx: template_paper.docx
+mainfont: Arial
+fontsize: 12pt
+linestretch: 1.5
+bibliography: lib.bib
+link-citations: yes
+nocite: |
+  @bugmann1996a
+linkcolor: blue
+csl: citStyle.csl
+editor_options:
+  markdown:
+    wrap: 72
+header-includes:
+- \usepackage[left]{lineno}
+- \linenumbers
+---
+
+```{r, echo=FALSE}
+  # devtools::install_github("cboettig/knitcitations@v1")
+  library(knitcitations); cleanbib()
+  cite_options(citation_format = "pandoc", check.entries = FALSE)
+  library(bibtex)
+  options(tinytex.verbose = TRUE)
+  #knitr::opts_chunk$set(echo = TRUE, fig.pos = "h", out.extra = "")
+
+```
+
+# Abstract
+
+Lorem ipsum dolor sit amet. At perspiciatis iusto est assumenda alias et
+distinctio voluptas non perspiciatis eveniet! Est similique nisi id
+debitis ipsa cum libero quibusdam eos quia esse cum esse fugiat sit
+cupiditate impedit. Aut architecto velit qui voluptatem similique vel
+placeat expedita et incidunt reiciendis et quos tempore. 33 voluptatibus
+voluptatem et magni aspernatur sed aspernatur dolorem ut aspernatur
+blanditiis.
+
+Et expedita impedit aut voluptatum quia ut perspiciatis earum. Eum
+voluptatum cumque ut rerum quam et illum exercitationem sit accusantium
+dolorum et modi reprehenderit ut velit voluptatem.
+
+At quia omnis sit laudantium sunt non aperiam cupiditate et nobis magni
+et voluptatem perspiciatis. Eum natus harum quo rerum esse hic eveniet
+omnis aut blanditiis internos aut tempora obcaecati sed molestiae illum.
+\newpage
+
+# Introduction
+
+Here I add a reference [@foresteurope2020]. Here I add two references
+[@vanclay1997; @bugmann1996], and I add another sentence with more
+references [@bugmann2019; @cailleret2017]. Here a reference inside the
+text @reyer2014.
+
+# Material and methods
+
+## Subsection
+
+Lorem ipsum dolor sit amet. At perspiciatis iusto est assumenda alias et
+distinctio voluptas non perspiciatis eveniet! Est similique nisi id
+debitis ipsa cum libero quibusdam eos quia esse cum esse fugiat sit
+cupiditate impedit. Aut architecto velit qui voluptatem similique vel
+placeat expedita et incidunt reiciendis et quos tempore. 33 voluptatibus
+voluptatem et magni aspernatur sed aspernatur dolorem ut aspernatur
+blanditiis.
+
+Et expedita impedit aut voluptatum quia ut perspiciatis earum. Eum
+voluptatum cumque ut rerum quam et illum exercitationem sit accusantium
+dolorum et modi reprehenderit ut velit voluptatem.
+
+At quia omnis sit laudantium sunt non aperiam cupiditate et nobis magni
+et voluptatem perspiciatis. Eum natus harum quo rerum esse hic eveniet
+omnis aut blanditiis internos aut tempora obcaecati sed molestiae illum.
+
+# Results
+
+Here one example referencing one figure (Figure \@ref(fig:ventana)).
+
+```{r ventana, echo=FALSE, fig.cap="One example figure with caption", out.width='100%'}
+        knitr::include_graphics(here::here("figures", "two_women_at_a_window_1942.9.46.jpg"))
+```
+
+# Discussion
+
+# References
+
+```{=html}
+<!--The relationship was first described by
+[@key] for single citation
+[@key1; @key2] multiple citation can be separated by semi-colon
+[-@key] in order to suppress author name, and just display the year
+[see @key1 p 12; also this ref @key2] is alos a valid syntax
+-->
+```
