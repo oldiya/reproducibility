@@ -1,0 +1,177 @@
+---
+title: "Thinking about reproducibility"
+subtitle: "Werkstattberichte. January 2024"
+author: "Olalla Díaz-Yáñez"
+title-slide-attributes:
+  data-background-image: "/img/ReproducibleJourney.jpg"
+  data-background-size: contain
+  data-background-opacity: "0.5"
+format: 
+  revealjs:
+     height: 1080
+     width: 1920
+editor: visual
+css: Olalla-slides-theme.css
+---
+
+## Thinking about reproducibility {.nostretch}
+
+[![](img/ReproducibleJourney.jpg)](https://zenodo.org/records/8169292)
+
+::: notes
+Reproducible research must contain a complete history and narrative (also known as Provenance) of the project planning and development process. This includes information on the data, tools, methods, codes, and documentation used in the research project. By storing a complete track-record of our work, we can ensure research sustainability, fair citation/acknowledgement, and usefulness of our and others' work in our research fields.
+:::
+
+## Why I care {.nostretch}
+
+[![](img/advocacy.jpg)](https://zenodo.org/records/8169292)
+
+## Definitions
+
+[![](img/ReproducibleDefinitionGrid.jpg)](https://zenodo.org/records/8169292)
+
+::: notes
+Reproducible: A result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer.
+
+Replicable: A result is replicable when the same analysis performed on different datasets produces qualitatively similar answers.
+
+Robust: A result is robust when the same dataset is subjected to different analysis workflows to answer the same research question (for example one pipeline written in R and another written in Python) and a qualitatively similar or identical answer is produced. Robust results show that the work is not dependent on the specificities of the programming language chosen to perform the analysis.
+
+Generalisable: Combining replicable and robust findings allow us to form generalisable results. Note that running an analysis on a different software implementation and with a different dataset does not provide generalised results. There will be many more steps to know how well the work applies to all the different aspects of the research question. Generalisation is an important step towards understanding that the result is not dependent on a particular dataset nor a particular version of the analysis pipeline.
+:::
+
+## Open research
+
+[![](img/evolution-open-research.png)](https://zenodo.org/records/8169292)
+
+::: notes
+Open research aims to transform research by making it more reproducible, transparent, reusable, collaborative, accountable, and accessible to society. It pushes for change in the way that research is carried out and disseminated by digital tools. One definition of open research, as given by the Organisation for Economic Co-operation and Development (OECD), is the practice of making "the primary outputs of publicly funded research results -- publications and the research data -- publicly accessible in a digital format with no or minimal restriction." To achieve this openness in research, each element of the research process should:
+
+Open Data: Documenting and sharing research data openly for re-use. Open Source Software: Documenting research code and routines, and making them freely accessible and available. Open Hardware: Documenting designs, materials, and other relevant information related to hardware, and making them freely accessible and available. Open Access: Making all published outputs freely accessible for maximum use and impact. Open Notebooks: An emerging practice, documenting and sharing the experimental process of trial and error.
+:::
+
+## Reasons for reproducibility
+
+[![](img/reasons-reproducibility.png)](https://zenodo.org/records/8169292)
+
+::: notes
+1.  Track a complete history of your research Reproducible research must contain a complete history and narrative (also known as Provenance) of the project planning and development process. This includes information on the data, tools, methods, codes, and documentation used in the research project. By storing a complete track-record of our work, we can ensure research sustainability, fair citation/acknowledgement, and usefulness of our and others' work in our research fields.
+2.  Facilitate collaboration and review process By designing reproducible workflows and sharing them with the different components of our research project, we can allow others to develop an in-depth understanding of our work. This encourages them to review our methods, test our code, propose useful changes and make thoughtful contributions to develop our project further. Reproducible workflows facilitate the peer review process tremendously by allowing reviewers access to the different parts of the projects that are necessary to validate the research outcomes.
+3.  Publish validated research and avoid misinformation Lack of reproducibility is one of the major factors that lead to paper retractions (source Retraction Watch). The best-known analyses of scientific literature in psychology \[BE12\] and cancer biology \[OpenSCollaboration15\] found the reproducibility rates of their research output of around 40% and 10%, respectively. By working reproducibly, we can develop validated research work, avoid misinformation that can limit replicability of our work and publish accurate research outputs. This aspect does not only support the validity of the current work, but any future studies that are based on reproducible research \[Lab16\].
+4.  Write your papers, thesis and reports efficiently Well documented analyses help us maintain easy access to all the results generated within a project that can be written up efficiently. If working in a team, collaborators can easily get recognition in terms of authorship for their contributions. Furthermore, by availing the underlying dataset and methods we can easily comply with the highest-level journal guidelines.
+5.  Get credits for your work fairly Applying reproducibility practices separately on different parts of the project such as data, independently executable codes and scripts, protocols, and reports allow other researchers to test and reuse our work in their research and brings fair recognition for our work. Researchers who publish their work with the underlying information, get cited more often as their research outcome can be broadly replicated and trusted. This fair credit system encourages researchers to further maintain reproducibility practices in their work.
+6.  Ensure continuity of your work By following guidelines for reproducibility, we can easily communicate our work with different stakeholders such as our supervisors, funders, reviewers, students, and potential collaborators. This aspect of reproducibility increases the usefulness of our research by enabling others to easily build on our results, and re-use our research materials \[Lab16\]. This ensures the continuity of a research idea and can even find fresh applications in other contexts. Progress of such projects can easily be tracked and continued - either by other researchers, or yourself if you want to build on your own work after a longer period \[Mar15\].
+:::
+
+## Barriers
+
+[![](img/challenges.png)](https://zenodo.org/records/8169292)
+
+## Barriers: Takes time & play the 5th
+
+::: {layout-ncol="2"}
+[![Help you of the future](img/help-you-of-the-future.png)](https://figshare.com/articles/dataset/Kirstie_Whitaker_-_Better_Science_through_Better_Data_2017_keynote_scribe_images/5577340/1)
+
+[![Make OK to be human](img/make-ok-to-be-human.png)](https://figshare.com/articles/dataset/Kirstie_Whitaker_-_Better_Science_through_Better_Data_2017_keynote_scribe_images/5577340/1)
+:::
+
+## The research cycle: Planning, execution, reporting
+
+[![](img/ResearchCycle.jpg)](https://zenodo.org/records/8169292)
+
+## A case study {.center}
+
+## Pre-registries {.nostretch}
+
+::: columns
+::: {.column width="40%"}
+**What?**
+
+-   Write and register a study protocol
+-   Time-stamped, read only created before the study
+-   This includes: research question, study design, or planned analysis
+-   Protocol amendments still possible
+
+**Why?**
+
+-   Allows comparison:reported research vs. actually planned research
+-   Add credibility to your research
+-   Think more deeply about your research and planning
+-   Set a stamped-record of your ideas
+-   Documents your research and your career
+:::
+
+::: {.column width="60%"}
+[![](img/project-design.png)](https://zenodo.org/records/8169292)
+:::
+:::
+
+## Registries (non-exhaustive list)
+
+[![](img/registriesList.png)](https://zenodo.org/records/8169292)
+
+## Project structure
+
+::: {layout-ncol="2"}
+[![](img/file-management-manual.jpg)](https://zenodo.org/records/8169292)
+
+[![](img/projectOrg.png)](https://zenodo.org/records/8169292)
+:::
+
+-   Landing Page - README File
+-   Contributor Pathways -Participation Guidelines
+
+## Project history
+
+::: {layout-ncol="2"}
+[![](img/ProjectHistory.jpg)](https://zenodo.org/records/8169292)
+
+[![](img/gitGithub.png)](https://zenodo.org/records/8169292)
+:::
+
+::: notes
+Motivation: In terms of reproducibility, version control is promordial in order to follow provenance information. Because data and analysis code do evolve over time, it can become very difficult or even impossible to know what version of the code and what version of the data was used to produce a particular figure. This provenance information is enabled and facilitated when both the data, the code and the figure files are under versioning. In addition, version control creates version history to help us understand what changes were made, or why a specific analysis was run, even weeks or months later. With the help of comments and commit messages in Git, for instance, each version can explain what changes it contains compared to the previous versions. This is helpful when we share our analysis (not only data), and make it auditable or reproducible - which is good scientific practice.
+:::
+
+## Reproducible code and code review
+
+[![](img/BugsAreFeatures.jpg)](https://zenodo.org/records/8169292)
+
+## Research data management
+
+::: {layout-ncol="2"}
+[![](img/fair-principles.png)](https://zenodo.org/records/8169292)
+
+[![](img/researchcollectionETH.jpg)](https://zenodo.org/records/8169292)
+:::
+
+## Reproducible environment
+
+[![](img/computational-environments.png)](https://zenodo.org/records/8169292)
+
+::: notes
+There are several ways of capturing computational environments. The major ones covered in this chapter will be Package Management Systems, Binder, Virtual Machines, and Containers. Each has its pros and cons, and the most appropriate option for you will depend on the nature of your project. They can be broadly split into two categories: those that capture only the software and its versions used in an environment (Package Management Systems), and those that replicate an entire computational environment - including the operating system and customised settings (Virtual Machines and Containers). Another way these can be split is by how the reproduced research is presented to the reproducer. Using Binder or a Virtual Machine creates a much more graphical, GUI-type result. In contrast, the outputs of Containers and Package Management Systems are more easily interacted with via the command line.
+:::
+
+
+## Resources
+
+-   [What is Docker and how can you use it in your course? (Online course from the Universität Zürich)](https://teachingtools.uzh.ch/de/tools/docker)
+
+-   [Swiss Reproducibility Conference 2024 (10-11.6 \@ETH)](https://www.reproducibility.ch)
+
+-   [Swiss Reproducibility Network Newsletter](https://ebpi.lists.uzh.ch/sympa/subscribe/swissrn?previous_action=review)
+
+-   [Center for Reproducible Science UZ](https://www.crs.uzh.ch/en.html)
+
+-   [Data Stewardship Network (ETH)](https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2023/01/start-des-data-stewardship-netzwerks-an-der-eth-zuerich.html)
+
+-   [Training on computational reproducibility (ETH library)](https://library.ethz.ch/en/news-and-courses/courses/research-data-management-and-related-topics/reproduzierbares-wissenschaftliches-rechnen-und-datenanalyse/details.9625o.html)
+
+-   [The Turing way: a guide for reproducible research](https://the-turing-way.netlify.app/index.html)
+
+## Removing barriers to science
+
+[![](img/barriers-no-text.jpg)](https://zenodo.org/records/8169292)
+
+
